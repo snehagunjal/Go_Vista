@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Caprasimo&family=Dosis:wght@200..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />  -->
+    <link rel="stylesheet" href="travel.css">
+
+
+    <title>Hyderabad</title>
+
+</head>
+<style>
+    body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Pseudo-element for background image */
+.hyderabad-body::before {
+  content: "";
+  position: fixed; /* stays fixed as background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://img.freepik.com/premium-photo/watercolor-illustration-charminar-hyderabad-telangana-formation-day_1102-13441.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3; /* control only background image */
+  z-index: -1; /* keep it behind content */
+}
+</style>
+<body class="hyderabad-body">
+    <!-- Navbar -->
+    <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo-text">
+            <span class="logo1"><b>Go</b></span><span class="logo2">Vista</span>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="travel1.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="Holidays.html"><i class="fa-solid fa-umbrella-beach"></i> Holidays</a></li>
+            <li><a href="Activities.html"><i class="fa-solid fa-person-hiking"></i> Activities</a></li>
+            <li><a href="Hotel.html"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+            <li><a href="Support.html"><i class="fa-solid fa-headphones"></i> Support</a></li>
+        </ul>
+    </div>
+    <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+  });
+</script>
+    <br>
+    <!-- pune -->
+    <div class="pune">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7jhzcrTp7Us?si=J3UpqzMZ2v2mlel1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h1>Biryani, Pearls & Nawabi Vibes <span style="font-family: cursive; color: red;"></span></h1>
+    </div>
+    <!-- <img height="300px" width="100%" src="https://www.shutterstock.com/image-vector/pune-skyline-vector-outline-india-260nw-2390225139.jpg" alt=""> -->
+
+    <!-- line -->
+    <div style=" border: 0.1px solid gray; width: 80%; margin: 0 auto;"></div>
+
+    <!-- experiences -->
+    <h1 style="text-shadow: 3px 3px 5px gray; margin: 20px auto; max-width: 1200px; line-height: 30px;">
+        From Biryani to Charminar in <span style="font-family: cursive; color: red;">Hyderabad🕌</span>
+        <br>
+        <span style="text-shadow: none; font-size: 20px; font-weight: 400;">
+            Book these activities for a close-up look at Pune.
+        </span>
+    </h1>
+
+    <!-- places images about -->
+
+    </head>
+
+    <body>
+        <div style="display: flex; gap: 30px;">
+
+            <!-- Place 1 salar jung museum -->
+            <div class="city" id="city1" style="display:block;">
+                <h1> Salar Jung Museum</h1>
+                <div class="slideshow-container" id="slideshow1">
+                    <div class="slide fade"><img
+                            src="https://i0.wp.com/weekendyaari.in/wp-content/uploads/2024/11/Salarjung-Museum-hyd.webp?fit=1500%2C1000&ssl=1">
+                    </div>
+                    <div class="slide fade"><img src="https://salarjungmuseum.in/images/Velied_Rebecca/1(1).jpg">
+                    </div>
+                    <div class="slide fade"><img src="https://www.salarjungmuseum.in/images/Ivory/1%20(2).jpg"></div>
+                    <div class="slide fade"><img
+                            src="https://venkatarangan.com/wp-content/uploads/2022/04/2022-04-03-hyderabad-salar-jung-museum-furnitures.jpg">
+                    </div>
+
+                    <!-- Arrows -->
+                    <span class="arrow left" onclick="changeCity(-1)">&#10094;</span>
+                    <span class="arrow right" onclick="changeCity(1)">&#10095;</span>
+                </div>
+                <!-- <p style="font-size: 20px;">🌿 About Lavasa City</p> -->
+                <p>Lavasa is a modern planned hill city located in the Western Ghats, near Pune, Maharashtra...</p>
+            </div>
+
+            <!-- place 2 park-->
+            <div class="city" id="city2">
+                <h1>Nehru Zoological Park</h1>
+                <div class="slideshow-container" id="slideshow2">
+                    <div class="slide fade"><img
+                            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifGezLP-nj97BtTvsTWYn21rstajBfze0WRytFmahTIdVSgY7_B_hZQ33dy65jZJmKHKxVSKgSJ5T3hTDwd8cpfaCQqGWnbj0_H7vHIS5TOhBKWeP_MtoYSRtwkU8QfbGh7pddcGRoM88Xx-USDJrAiUc7Rx3QKTr3Kw7CPiCyP5tJxSrB3Cnm26Ke-w/w1200-h630-p-k-no-nu/Nehru%20Zoological%20Park%20in%20Hyderabad.jpg">
+                    </div>
+                    <div class="slide fade"><img
+                            src="https://holidayszone.in/images/sightseeing-places/hyderabad/headers/nehru-zoological-park-hyderabad-tour-header.jpg">
+                    </div>
+                    <div class="slide fade"><img
+                            src="https://media1.thrillophilia.com/filestore/ge3zzi0tulrplpjjvu8j9swsgea1_1589351340_DSC00925.JPG">
+                    </div>
+                    <div class="slide fade"><img
+                            src="https://nzptsfd.telangana.gov.in/newResources/css/img/history.jpg">
+                    </div>
+
+                    <!-- Arrows -->
+                    <span class="arrow left" onclick="changeCity(-1)">&#10094;</span>
+                    <span class="arrow right" onclick="changeCity(1)">&#10095;</span>
+                </div>
+                <!-- <p style="font-size: 20px;">🌿 About Aga Khan Palace</p> -->
+                <p><b>Nehru Zoological Park</b> is a zoo in Hyderabad, Telangana, known for its large size, diverse
+                    animal
+                    collection, and features like a safari, nocturnal house, and butterfly park.</p>
+            </div>
+
+            <!-- City 3 The Jagannath Temple -->
+            <div class="city" id="city3">
+                <h1>Jagannath Swami Temple </h1>
+                <div class="slideshow-container" id="slideshow3">
+                    <div class="slide fade"><img
+                            src="https://ourtemples.info/wp-content/uploads/2024/01/2022-10-22-11.28.10-scaled.jpg">
+                    </div>
+                    <div class="slide fade"><img
+                            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/43/79/39/the-gleaming-temple.jpg?w=1200&h=-1&s=1">
+                    </div>
+                    <div class="slide fade"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32UbtFJniD9RVvqxGZXXW4nMds-81k6BgCK0wLJ04Xm4XL16JGRcPH3UpPVKLFsz2Hsk&usqp=CAU">
+                    </div>
+                    <div class="slide fade"><img src="https://yometro.com/images/places/sri-jagannath-temple.jpg">
+                    </div>
+
+                    <!-- Arrows -->
+                    <span class="arrow left" onclick="changeCity(-1)">&#10094;</span>
+                    <span class="arrow right" onclick="changeCity(1)">&#10095;</span>
+                </div>
+                <!-- <p style="font-size: 20px;">🌿 About Laal Mahal</p> -->
+                <p><b>The Jagannath Temple</b> in Hyderabad, India, Telangana, is a modern temple built by the Odia
+                    community
+                    of the city of Hyderabad dedicated to the Hindu God Jagannath.</p>
+            </div>
+            <!-- City 4 Shilparamam  -->
+            <div class="city" id="city4">
+                <h1>Shilparamam </h1>
+                <div class="slideshow-container" id="slideshow4">
+                    <div class="slide fade"><img
+                            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/be/cd/da/inside-the-market-at.jpg?w=900&h=-1&s=1">
+                    </div>
+
+                    <div class="slide fade"><img
+                            src="https://thumbs.dreamstime.com/b/indian-woman-figurine-carrying-things-basket-shilparamam-march-hyderabad-india-52088199.jpg">
+                    </div>
+                    <div class="slide fade"><img
+                            src="https://i.pinimg.com/564x/2e/0e/d5/2e0ed5ddd024d4be73e11e01acdb25df.jpg">
+                    </div>
+                    <div class="slide fade"><img
+                            src="https://i.pinimg.com/736x/92/30/45/923045052bc71d325b028b915dc08fe5.jpg">
+                    </div>
+
+                    <!-- Arrows -->
+                    <span class="arrow left" onclick="changeCity(-1)">&#10094;</span>
+                    <span class="arrow right" onclick="changeCity(1)">&#10095;</span>
+                </div>
+                <!-- <p style="font-size: 20px;">🌿 About Osho Garden</p> -->
+                <p><b>Shilparamam</b> is an arts and crafts village located in Madhapur, Hyderabad, Telangana, India.
+                    The
+                    village was conceived with an idea to create an environment for the preservation of traditional
+                    Indian crafts.</p>
+            </div>
+        </div>
+        <script>
+            // City switch
+            let currentCity = 1;
+            const totalCities = 4;
+
+            function changeCity(n) {
+                document.getElementById("city" + currentCity).style.display = "none";
+                currentCity += n;
+                if (currentCity > totalCities) currentCity = 1;
+                if (currentCity < 1) currentCity = totalCities;
+                document.getElementById("city" + currentCity).style.display = "block";
+            }
+
+            // Slideshow for City 1
+            let slideIndex1 = 0;
+            function showSlides1() {
+                let slides = document.querySelectorAll("#slideshow1 .slide");
+                slides.forEach(slide => slide.style.display = "none");
+                slideIndex1++;
+                if (slideIndex1 > slides.length) slideIndex1 = 1;
+                slides[slideIndex1 - 1].style.display = "block";
+                setTimeout(showSlides1, 3000);
+            }
+            showSlides1();
+
+            // Slideshow for City 2
+            let slideIndex2 = 0;
+            function showSlides2() {
+                let slides = document.querySelectorAll("#slideshow2 .slide");
+                slides.forEach(slide => slide.style.display = "none");
+                slideIndex2++;
+                if (slideIndex2 > slides.length) slideIndex2 = 1;
+                slides[slideIndex2 - 1].style.display = "block";
+                setTimeout(showSlides2, 3000);
+            }
+            showSlides2();
+            // Slideshow for City 3
+            let slideIndex3 = 0;
+            function showSlides3() {
+                let slides = document.querySelectorAll("#slideshow3 .slide");
+                slides.forEach(slide => slide.style.display = "none");
+                slideIndex3++;
+                if (slideIndex3 > slides.length) slideIndex3 = 1;
+                slides[slideIndex3 - 1].style.display = "block";
+                setTimeout(showSlides3, 3000); // Loop correctly
+            }
+            showSlides3();
+
+            //slideshow for city 4
+            let slideIndex4 = 0;
+            function showSlides4() {
+                let slides = document.querySelectorAll("#slideshow4 .slide");
+                slides.forEach(slide => slide.style.display = "none");
+                slideIndex4++;
+                if (slideIndex4 > slides.length) slideIndex4 = 1;
+                slides[slideIndex4 - 1].style.display = "block";
+                setTimeout(showSlides4, 3000); // Loop correctly
+            }
+            showSlides4();
+
+        </script>
+        <h1 style="text-shadow: 3px 3px 5px gray; margin: 20px auto; max-width: 1200px; text-align:center;">
+            <span style="color: red;">T</span>op <span style="color: red;">A</span>ttractions
+        </h1>
+
+        <div class="attractions-container">
+            <div class="attraction">
+                <img src="https://indiainfrahub.com/wp-content/uploads/2020/08/Charminar.jpg" alt="">
+
+                <!-- <p style="text-align: left; font-weight: 700;"> Dagdusheth  Ganpati</p>  -->
+                <hr>
+                <p>The <b>Charminar</b> in Hyderabad is a famous historical monument known for its stunning architecture
+                    and cultural significance. Built in 1591</p>
+            </div>
+
+            <div class="attraction">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/74/b9/0b.jpg"
+                    alt="">
+                <hr>
+                <p>The <b>Golconda</b> fort was originally built by Kakatiya ruler Pratāparudra in the 11th century out
+                    of mud walls.</p>
+            </div>
+
+            <div class="attraction">
+                <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/61000/61713-Qutub-Shahi-Tombs.jpg"
+                    alt="">
+                <hr>
+                <p>The <b>Qutub Shahi Tombs</b>, located in Hyderabad, are a collection of mausoleums built by the Qutub
+                    Shahi dynasty, who ruled Golconda. </p>
+            </div>
+
+
+        </div>
+        <div class="attractions-container">
+            <div class="attraction">
+                <img src="https://www.hyderabadtourism.travel/images/v3/480x320/ramoji-film-city-480x320.jpg" alt="">
+
+                <!-- <p style="text-align: left; font-weight: 700;"> Dagdusheth  Ganpati</p>  -->
+                <hr>
+                <p><b>Ramoji Film City</b> is an integrated film studio facility located in Hyderabad, India. Spread
+                    over 2,000
+                    acres, it is recognized as the world's largest film studio complex by the Guinness World Records</p>
+            </div>
+
+            <div class="attraction">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj65nXsD8koppl4CNjXHj6Y7p3bS4FA49WgLVl3jWWQ6U2AlAVcNBTvemyAl-uPxw1ipXQfLpSZXAwgkTviJkj-qucNj1XBjw8yGc0DuLN7esDok_j4PKG_M1aH0nAIv5vwyZOrgMe_I38j/s1600/01+Makkah+Masjid+Charminar+Hyderabad.jpg"
+                    alt="">
+                <hr>
+                <p><b> Makkah Masjid</b> It is the largest mosque in the city, and one of the largest in the country, with a capacity of 10,000 worshipper. </p>
+            </div>
+
+            <div class="attraction">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/17181480.jpg?k=8bfc458b703e4447e12f6470f32356ff04208f9aa902dbecb9cfaf708697d30e&o=&hp=1"
+                    alt="">
+                <hr>
+                <p><b>Falaknuma</b> is a former palace and currently a luxury hotel in Hyderabad, Telangana, India. It originally belonged to the Paigah family.</p>
+            </div>
+
+
+        </div>
+
+
+    </body>
+<footer class="footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+
+  <!-- Top Footer -->
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section about">
+      <h3>About GoVista</h3>
+      <p>
+        Founded in 2000, GoVista is a leading Indian travel platform committed to providing excellent
+        offers, competitive airfares, and seamless booking experiences. Our goal is to simplify travel
+        planning and offer the best deals with no hidden fees.
+      </p>
+      <p><strong>Office Address:</strong><br>
+        123 Travel Street, Mumbai, Maharashtra, India - 400001
+      </p>
+      <p>
+        <strong>Phone:</strong> +91-98765-43210<br>
+        <strong>Email:</strong> support@govista.in
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="travel1.html">Home</a></li>
+        <li><a href="Holidays.html">Holidays</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="Hotel.html">Hotels</a></li>
+        <li><a href="Support.html">Support</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-section newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Get exclusive travel deals, latest offers and updates delivered directly to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr class="footer-divider">
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; 2025 <strong>GOVISTA PVT. LTD.</strong> All rights reserved.<br>
+      Designed with <span style="color: #e63946;">&#10084;</span> for travel.
+    </div>
+  </div>
+</footer>
+
+
+</html>

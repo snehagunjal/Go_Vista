@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Caprasimo&family=Dosis:wght@200..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />  -->
+    <link rel="stylesheet" href="travel.css">
+
+
+    <title>🏄‍♂️Activities</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo-text">
+            <span class="logo1"><b>Go</b></span><span class="logo2">Vista</span>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="travel1.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="Holidays.html"><i class="fa-solid fa-umbrella-beach"></i> Holidays</a></li>
+            <li><a href="Activities.html"><i class="fa-solid fa-person-hiking"></i> Activities</a></li>
+            <li><a href="Hotel.html"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+            <li><a href="Support.html"><i class="fa-solid fa-headphones"></i> Support</a></li>
+        </ul>
+    </div>
+    <br>
+    <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+  });
+</script>
+    <!-- end navbar -->
+
+    <!-- 
+<div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin: 20px 0;">
+
+  <label style="background: red; border: 2px solid black; border-radius: 25px; padding: 10px 20px; cursor: pointer; font-size: 14px; color: white; font-weight: 500; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px;">
+    <input type="checkbox" name="l" style="accent-color: black; transform: scale(1.2);">
+    Beach Trips
+  </label>
+
+  <label style="background: red; border: 2px solid black; border-radius: 25px; padding: 10px 20px; cursor: pointer; font-size: 14px; color: white; font-weight: 500; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px;">
+    <input type="checkbox" name="l" style="accent-color: black; transform: scale(1.2);">
+    Nature & Adventure
+  </label>
+
+  <label style="background: red; border: 2px solid black; border-radius: 25px; padding: 10px 20px; cursor: pointer; font-size: 14px; color: white; font-weight: 500; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px;">
+    <input type="checkbox" name="l" style="accent-color: black; transform: scale(1.2);">
+    Cultural & History
+  </label>
+
+  <label style="background: red; border: 2px solid black; border-radius: 25px; padding: 10px 20px; cursor: pointer; font-size: 14px; color: white; font-weight: 500; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px;">
+    <input type="checkbox" name="l" style="accent-color: black; transform: scale(1.2);">
+    National Parks
+  </label>
+
+  <label style="background: red; border: 2px solid black; border-radius: 25px; padding: 10px 20px; cursor: pointer; font-size: 14px; color: white; font-weight: 500; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px;">
+    <input type="checkbox" name="l" style="accent-color: black; transform: scale(1.2);">
+    Family Friendly Activities
+  </label>
+
+</div> -->
+
+
+    <!-- Header Section -->
+    <div style="text-align:center; 
+            margin: 40px auto; 
+            position: sticky; 
+            top: 0; 
+           border-radius: 0px;    background-color: rgb(251, 246, 241);
+            padding: 10px 0px 0px 0px; 
+            z-index: 10;">
+
+        <h2 style="font-size: 38px; 
+             font-weight: 800; 
+             font-family: 'Poppins', sans-serif; 
+             margin-bottom: 15px; 
+             background: linear-gradient(90deg, #e50914, #111); 
+             -webkit-background-clip: text; 
+             -webkit-text-fill-color: transparent;">
+            Pick an Activity, Make a Memory
+        </h2>
+
+        <!-- Decorative line -->
+        <div
+            style="width: 90px; height: 4px; background: linear-gradient(90deg, #e50914, #111); margin: 0 auto; border-radius: 2px;">
+        </div>
+
+        <!-- Sub-text -->
+        <p style="color:#444; font-size:18px; margin-top:12px; font-family: 'Poppins', sans-serif;">
+            ✨ Unforgettable experiences, one adventure at a time ✨
+        </p>
+    </div>
+
+
+
+    </div>
+    <br><br>
+
+    <style>
+        .tour-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 0 auto;
+
+            max-width: 1200px;
+            padding: 0 20px;
+            /* <-- Add padding so cards never touch edges */
+        }
+
+        .tour-card {
+            flex: 1 1 250px;
+            border: 1px solid rgb(193, 185, 185);
+
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s linear;
+        }
+
+        .tour-card:hover {
+            transform: scale(1.03);
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .tour-card p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .tour-card {
+                flex: 1 1 100%;
+                /* full width within padded container */
+                max-width: 90%;
+                /* leave some space on sides */
+                margin: 10px auto;
+            }
+        }
+
+        .fa-heart:hover {
+            color: red;
+
+        }
+
+        strong {
+            color: rgb(224, 51, 51);
+        }
+    </style>
+    <!-- column 1 -->
+    <div class="tour-cards-container">
+
+        <div class="tour-card" style="position: relative;">
+
+            <!-- Heart icon in circle -->
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <!-- Image -->
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/14123c593dbe8f002392dfd26122146f9483d4ffb04da9a8ac613c8ac600ef0f.jpg"
+                alt="Tour Image" style="width: 100%; height: auto; display: block;">
+
+            <!-- Text -->
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="tour-card" style="position: relative;">
+            <!-- Heart icon in circle -->
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/8ed86435fa28150df0ca00d7745c4916339b4b9552177e4fd61dc27d00af99a5.jpeg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/76e75d073cb3790d6d3fa805da2541d1d77d33e83a62426e37fad6628e615850.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/31bff616cd8d9827a12a6cd8064bf4c7295b7a10ff34a93e2e81f239f97bc4eb.jpeg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+
+    <!-- column 2 -->
+    <div class="tour-cards-container">
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/fb394f22f96d035e05973ad8ee788e0b8c613beec5158e650c0e389e4e678a7c.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/57a0ce2d50f5a95c722ad9ed905e80ab90777b7e37322b9b8fb6afdf23a62f6c.jpeg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/6e3580697d126ef1a716150e92910fb57f4d9a0f9d588e7b0c61022f51fb6e31.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/44eb9cad00f0bdb13525cda1c0c7412650d9a30231a614960e5129fc5c4ae68e.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+        <!-- Repeat other .tour-card divs here -->
+
+    </div>
+    <br><br>
+
+    <!-- column 3 -->
+    <div class="tour-cards-container">
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/4af2f0b31e36080878273edf53c7969c4cea092e7724f5c09439eaa0147f7519.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/149db0ac95d1eb0df76dbfe7f7eb6afe0e776de9e4cce7d815d2638b41c541e0.png"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/4ec0b351af035a949207e88968baf25c6b8293b5d6e94f2d4eeeb7a112bdeb61.jpeg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/d4bb04d85e14fc83c05e84a799c157a8f5609cef27bf26b60684b7458aa28090.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+        <!-- Repeat other .tour-card divs here -->
+
+    </div>
+    <br><br>
+
+    <!-- column 4 -->
+
+    <div class="tour-cards-container">
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/1c32d0647aad5c5e061cbcacaf57fc01184276f9881ed196bafdb4dd14f5c4c9.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/06e565b2eaa1c2ce4b583c7c48f6e47a3f649753ee82c1a7a884b043596e7ba6.jpeg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/3338957e68e9969b90fb7a3f1249d79aa55cec54951ec4b77363db4a6b0ba6d5.jpeg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-card" style="position: relative;">
+            <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+        border: 1px solid #fff;
+    ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=270,height=180,dpr=2/tour_img/0ef55d9f018a5d3b0f6e6d4e55fd1dc0870808ab3019d085d97f510ced6da40f.jpg"
+                alt="Tour Image">
+            <div style="padding: 15px;">
+                <p style="font-size: 16px; color: #222; line-height: 1.4;">
+                    <b>Saranda: Boat tour to 7 destinations including free umbrella<br>
+                        Small group (6 participants)</b>
+                </p>
+                <p style="font-size: 14px; color: #777;"> <br>
+                    From <del>$4,101</del> <br> <strong>$20 per person</strong>
+                </p>
+            </div>
+        </div>
+        <!-- Repeat other .tour-card divs here -->
+
+    </div>
+
+
+
+    <br><br>
+
+
+   <footer class="footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+
+  <!-- Top Footer -->
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section about">
+      <h3>About GoVista</h3>
+      <p>
+        Founded in 2000, GoVista is a leading Indian travel platform committed to providing excellent
+        offers, competitive airfares, and seamless booking experiences. Our goal is to simplify travel
+        planning and offer the best deals with no hidden fees.
+      </p>
+      <p><strong>Office Address:</strong><br>
+        123 Travel Street, Mumbai, Maharashtra, India - 400001
+      </p>
+      <p>
+        <strong>Phone:</strong> +91-98765-43210<br>
+        <strong>Email:</strong> support@govista.in
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="travel1.html">Home</a></li>
+        <li><a href="Holidays.html">Holidays</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="Hotel.html">Hotels</a></li>
+        <li><a href="Support.html">Support</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-section newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Get exclusive travel deals, latest offers and updates delivered directly to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr class="footer-divider">
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; 2025 <strong>GOVISTA PVT. LTD.</strong> All rights reserved.<br>
+      Designed with <span style="color: #e63946;">&#10084;</span> for travel.
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

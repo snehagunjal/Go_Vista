@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Caprasimo&family=Dosis:wght@200..800&display=swap"
+    rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />  -->
+  <link rel="stylesheet" href="travel.css">
+
+
+  <title>Holidays</title>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+    <div class="logo-text">
+      <span class="logo1"><b>Go</b></span><span class="logo2">Vista</span>
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul class="nav-links">
+      <li><a href="travel1.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="Holidays.html"><i class="fa-solid fa-umbrella-beach"></i> Holidays</a></li>
+      <li><a href="Activities.html"><i class="fa-solid fa-person-hiking"></i> Activities</a></li>
+      <li><a href="Hotel.html"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+      <li><a href="Support.html"><i class="fa-solid fa-headphones"></i> Support</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+    });
+  </script>
+
+  <!-- family stay img  -->
+  <div style="margin: 0 auto; width: 100%; max-width: 1500px; position: relative; overflow: hidden;">
+    <!-- Blurred image -->
+    <img src="https://cache.marriott.com/is/image/marriotts7prod/stock-family-278725:Pano-Hor" width="100%"
+      height="400px" style="display:block; object-fit:cover; filter: blur(1.5px); transform: scale(1.05);">
+
+    <!-- Text stays sharp -->
+    <p style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: clamp(32px, 6vw, 120px); 
+        font-weight: 700; 
+      color: #FFD700; 
+text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+font-family: 'Playfair Display', serif;
+        margin: 0;">
+      Family Stay
+    </p>
+  </div>
+  <div style=" 
+  width: 90%; 
+  max-width: 1200px; 
+  margin: 40px auto; 
+  background: #ffffff; 
+  padding: 35px; 
+  border-radius: 14px; 
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1); 
+  font-family: 'Playfair Display', serif; 
+  line-height: 1.6;
+">
+    <!-- family stay package  -->
+    <h2 style="margin-top: 0; font-size: 32px; color: #222; text-align:center;"><i class="fa-solid fa-people-roof"
+        style="color: red;"></i> Family Stay Package</h2>
+
+    <p style="font-size: 16px; color: #444; text-align:center;">
+      Stay at <strong>[Hotel Name]</strong> with your family and enjoy daily breakfast.
+      Conveniently located near <strong>[Nearby Landmark/Attraction]</strong>,
+      [Hotel Name] is the perfect choice for a family holiday.
+    </p>
+
+    <h3 style="font-size: 20px; margin-top: 25px; color: #222;">Offer Includes</h3>
+    <ul style="margin: 10px 0 20px 20px; color: #555;">
+      <li>Daily Breakfast</li>
+      <li>Two connecting rooms suitable for 4 adults and 2 children</li>
+    </ul>
+
+    <h3 style="font-size: 20px; margin-top: 25px; color: #222;">📌 How to Book</h3>
+    <p style="font-size: 16px; color: #444;">
+      Be sure that the <strong>Promotional Code</strong> appears in the
+      <em>Corporate/Promotional code</em> box when making your online reservation,
+      or call <strong>[Hotel Phone Number]</strong> and ask for the promotional code.
+      <br>For toll-free numbers outside the US, please visit <em>Global Reservation Numbers</em>.
+    </p>
+
+    <h3 style="font-size: 20px; margin-top: 25px; color: #222;"><i class="fa-solid fa-scale-balanced"
+        style="color: red;"></i>Terms & Conditions</h3>
+    <p style="font-size: 16px; color: #444;">
+      <strong>Promotional Code:</strong> [Code Here] <br><br>
+      <strong>Valid Stay Dates:</strong> [Start Date] – [End Date]
+    </p>
+
+    <!-- CTA Button -->
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="#" style="
+      background: #0078d7; 
+      color: #fff; 
+      padding: 12px 28px; 
+      border-radius: 8px; 
+      text-decoration: none; 
+      font-size: 16px; 
+      font-weight: bold;
+      transition: background 0.3s;
+    " onmouseover="this.style.background='#005fa3'" onmouseout="this.style.background='#0078d7'">
+        Book Now
+      </a>
+    </div>
+  </div>
+  <style>
+    .beach-t:hover {
+      background-color: rgb(24, 74, 61);
+      color: white;
+    }
+  </style>
+  </div>
+  <br>
+  <div style="text-align: center; padding: 20px; margin: 0 auto; max-width: 90%;">
+    <p style="
+    font-family: 'Playfair Display', serif; 
+    font-size: clamp(24px, 5vw, 40px); 
+    margin: 0;
+  ">
+      More Offers At This Property
+    </p>
+  </div>
+
+  <!-- beach img  -->
+  <div style="
+    box-shadow: 5px 3px 10px rgba(0,0,0,0.2); 
+    margin: 20px auto; 
+    width: 90%; 
+    max-width: 1200px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    border: 1px solid #eee; 
+    border-radius: 10px; 
+    background-color: white; 
+    overflow: hidden;
+">
+    <!-- Text Section -->
+    <div class="beach-t" style=" flex: 1 1 400px; padding: 20px;">
+      <p style="
+            font-size: clamp(24px, 3vw, 40px); 
+            font-family: 'Playfair Display', serif; 
+            line-height: 1.3; 
+            margin: 0;
+        ">
+        Let Every Stay Take You Further. Up to 10,000 Bonus Points...
+      </p>
+      <p style="
+            color: gray; 
+            font-size: clamp(14px, 2vw, 20px); 
+            margin-top: 10px; 
+            line-height: 1.5;
+        ">
+        Stay a minimum of 2 nights and get up to 10,000 bonus points per stay
+        across the Middle East & Africa and select European destinations.
+      </p>
+    </div>
+
+    <!-- Image Section -->
+    <div style="flex: 1 1 300px;">
+      <img
+        src="https://cache.marriott.com/is/image/marriotts7prod/bonvoy-1286387654-35771:Wide-Hor?wid=800&fit=constrain"
+        alt="Offer Image" style="width: 100%; height: auto; display: block;">
+    </div>
+  </div>
+
+  <br>
+
+  <!-- beach img  -->
+  <div style="
+    box-shadow: 5px 3px 10px rgba(0,0,0,0.2); 
+    margin: 20px auto; 
+    width: 90%; 
+    max-width: 1200px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    border: 1px solid #eee; 
+    border-radius: 10px; 
+    background-color: white; 
+    overflow: hidden;
+">
+
+    <!-- Image Section -->
+    <style>
+      @media (max-width: 768px) {
+        .beach-t {
+          order: -1;
+        }
+
+        div[style*="flex: 1 1 300px;"] {
+          order: 1;
+        }
+      }
+    </style>
+    <div style="flex: 1 1 300px;">
+      <img
+        src="https://foto.hrsstatic.com/fotos/0/2/800/458/80/000000/http%3A%2F%2Ffoto-origin.hrsstatic.com%2Ffoto%2Fdms%2F544199%2FEAN%2F3e045fb4_z.jpg/8db1861a17745005b96ebbdb40e8129d/500%2C374/6/Hawksbill_Resort_Antigua-Five_Islands_Village-Info-4-544199.jpg"
+        alt="Offer Image" style="width: 100%; height: auto; display: block;">
+    </div>
+    <!-- Text Section -->
+    <div class="beach-t" style=" flex: 1 1 400px; padding: 20px;">
+      <p style="
+            font-size: clamp(24px, 3vw, 40px); 
+            font-family: 'Playfair Display', serif; 
+            line-height: 1.3; 
+            margin: 0;
+        ">
+        Let Every Stay Take You Further. Up to 10,000 Bonus Points...
+      </p>
+      <p style="
+            color: gray; 
+            font-size: clamp(14px, 2vw, 20px); 
+            margin-top: 10px; 
+            line-height: 1.5;
+        ">
+        Stay a minimum of 2 nights and get up to 10,000 bonus points per stay
+        across the Middle East & Africa and select European destinations.
+      </p>
+    </div>
+
+  </div>
+  <br>
+
+  <!-- winter img  -->
+  <div style="
+    box-shadow: 5px 3px 10px rgba(0,0,0,0.2); 
+    margin: 20px auto; 
+    width: 90%; 
+    max-width: 1200px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    border: 1px solid #eee; 
+    border-radius: 10px; 
+    background-color: white; 
+    overflow: hidden;
+">
+    <!-- Text Section -->
+    <div class="beach-t" style=" flex: 1 1 400px; padding: 20px;">
+      <p style="
+            font-size: clamp(24px, 3vw, 40px); 
+            font-family: 'Playfair Display', serif; 
+            line-height: 1.3; 
+            margin: 0;
+        ">
+        Relax, indulge, and enjoy while earning rewards..
+      </p>
+      <p style="
+            color: gray; 
+            font-size: clamp(14px, 2vw, 20px); 
+            margin-top: 10px; 
+            line-height: 1.5;
+        ">
+        Relish cozy accommodations, daily breakfast, and special seasonal experiences designed for family and friends
+        across your favorite destinations.
+      </p>
+    </div>
+
+    <!-- Image Section -->
+    <div style="flex: 1 1 300px;">
+      <img src="https://media.holidify.com/images/cmsuploads/compressed/winter-kashmir_20250107115032.jpg"
+        alt="Offer Image" style="width: 100%; height: auto; display: block;">
+    </div>
+  </div>
+
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+
+    <!-- Top Footer -->
+    <div class="footer-container">
+
+      <!-- About -->
+      <div class="footer-section about">
+        <h3>About GoVista</h3>
+        <p>
+          Founded in 2000, GoVista is a leading Indian travel platform committed to providing excellent
+          offers, competitive airfares, and seamless booking experiences. Our goal is to simplify travel
+          planning and offer the best deals with no hidden fees.
+        </p>
+        <p><strong>Office Address:</strong><br>
+          123 Travel Street, Mumbai, Maharashtra, India - 400001
+        </p>
+        <p>
+          <strong>Phone:</strong> +91-98765-43210<br>
+          <strong>Email:</strong> support@govista.in
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="travel1.html">Home</a></li>
+          <li><a href="Holidays.html">Holidays</a></li>
+          <li><a href="Activities.html">Activities</a></li>
+          <li><a href="Hotel.html">Hotels</a></li>
+          <li><a href="Support.html">Support</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-section newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Get exclusive travel deals, latest offers and updates delivered directly to your inbox.</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="footer-divider">
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 <strong>GOVISTA PVT. LTD.</strong> All rights reserved.<br>
+        Designed with <span style="color: #e63946;">&#10084;</span> for travel.
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

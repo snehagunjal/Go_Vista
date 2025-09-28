@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GoVista-Agencies</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Caprasimo&family=Dosis:wght@200..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="travel.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+     <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+    <div class="logo-text">
+        <img src="" alt="">
+    <span class="logo1"><b>Go</b></span><span class="logo2">Vista</span> 
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul class="nav-links">
+      <li><a href="travel1.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="Holidays.html"><i class="fa-solid fa-umbrella-beach"></i> Holidays</a></li>
+      <li><a href="Activities.html"><i class="fa-solid fa-person-hiking"></i> Activities</a></li>
+      <li><a href="Hotel.html"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+      <li><a href="Support.html"><i class="fa-solid fa-headphones"></i> Support</a></li>
+    </ul>
+  </div>
+
+
+
+
+    <!-- Hero Section -->
+    <div class="center bg" data-aos="fade-up" data-aos-duration="1000">
+        <div style="margin-top: 7%;"> Welcome to <span class="logo1"><b>Go</b></span><span class="logo2">Vista</span>
+        </div>
+        <form action="" onsubmit="this.action = this.city.value">
+            <select name="city" class="search" required>
+                <option value="">Where to next?...</option>
+                <option value="Pune.html"><a href="Pune.html">Pune</a></option>
+                <option value="Mumbai.html"><a href="Mumbai.html">Mumbai</a></option>
+                <option value="Hyderabad.html"><a href="Hyderabad.html">Hyderabad</a></option>
+            </select>
+            <button class="button1" type="submit"><i class="fa-solid fa-plane-departure"></i></button>
+        </form>
+    </div>
+
+    <!-- Trending Section -->
+    <div class="trending-div" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <p class="trending-p">
+            <span class="trending-span">T</span>rending <span class="trending-span">H</span>ostspots
+            <i style="color: black;" class="fa-solid fa-plane"></i>
+        </p>
+        <p class="trending-subtitle">Top Picks Loved by Indian Travelers</p>
+        <div class="trending-cards">
+            <div class="card">
+                <img src="https://cdn.britannica.com/37/189837-050-F0AF383E/New-Delhi-India-War-Memorial-arch-Sir.jpg"
+                    alt="New Delhi" />
+                <p>New Delhi</p>
+            </div>
+            <div class="card">
+                <a href="Mumbai.html"> <img
+                        src="https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg"
+                        alt="Mumbai" />
+                    <p>Mumbai</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Highlights Section (Box 3) -->
+    <div class="b3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="b3-div">
+            <img class="b3img" src="https://www.eyeonasia.gov.sg/images/india-selected/tamil-nadu-profile.jpg"
+                alt="Tamil Nadu" />
+            <p class="absolute-p">Tamil Nadu</p>
+        </div>
+        <div class="b3-div">
+            <img class="b3img"
+                src="https://s7ap1.scene7.com/is/image/incredibleindia/hawa-mahal-jaipur-rajasthan-city-1-hero?qlt=82&ts=1742200253577"
+                alt="Rajasthan" />
+            <p class="absolute-p">Rajasthan</p>
+        </div>
+        <div class="b3-div">
+            <a href="Hyderabad.html"> <img class="b3img"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/46/bc/ed/hyderabad.jpg?w=1400&h=1400&s=1"
+                    alt="Hyderabad" />
+                <p class="absolute-p">Hyderabad</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Travel Categories (Box 4) -->
+    <div class="box4-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+        <p class="trending-p">
+            <span class="trending-span">Trip</span> Planned. <span class="trending-span">Fun</span> Loaded
+        </p>
+        <p class="subtext">Pack the vibe and explore the top destinations</p>
+        <div class="radio-div2">
+            <div class="radio-div selected" onclick="showSection('toys', this)">
+                <input class="input" type="radio" name="place" id="city" checked />
+                <i class="fa-solid fa-tree-city"></i>
+                <label for="city">City</label>
+            </div>
+            <div class="radio-div" onclick="showSection('cat', this)">
+                <input class="input" type="radio" name="place" id="Beach" />
+                <i class="fa-solid fa-volleyball"></i>
+                <label for="Beach">Beach</label>
+            </div>
+            <div class="radio-div" onclick="showSection('dog', this)">
+                <input class="input" type="radio" name="place" id="mountain" />
+                <i class="fa-solid fa-mountain"></i>
+                <label for="mountain">Mountains</label>
+            </div>
+            <div class="radio-div" onclick="showSection('groom', this)">
+                <input class="input" type="radio" name="place" id="food" />
+                <i class="fa-solid fa-burger"></i>
+                <label for="food">Food</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- City Places (Box 5) -->
+    <div id="toys" class="place active" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+        <div>
+            <img class="box5img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Chandra_Mahal%2C_City_Palace%2C_Jaipur%2C_20191218_0951_9043.jpg/960px-Chandra_Mahal%2C_City_Palace%2C_Jaipur%2C_20191218_0951_9043.jpg"
+                alt="Jaipur" />
+            <p class="box5-p">Jaipur</p>
+        </div>
+        <div>
+            <a href="Pune.html" style="text-decoration: none; color: black;"><img class="box5img"
+                    src="https://images.cnbctv18.com/wp-content/uploads/2018/08/pune.jpg" alt="Pune" />
+                <p class="box5-p"> Pune</p>
+            </a>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://lp-cms-production.imgix.net/2019-06/9483508eeee2b78a7356a15ed9c337a1-bengaluru-bangalore.jpg?sharp=10&vib=20&w=1200&w=600&h=400"
+                alt="Bangalore" />
+            <p class="box5-p">Bangalore</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://www.agoda.com/wp-content/uploads/2024/03/Chennai-India-scaled-e1710033849588.jpg"
+                alt="Chennai" />
+            <p class="box5-p">Chennai</p>
+        </div>
+
+    </div>
+
+    <!-- Beach Places -->
+    <div id="cat" class="place" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+        <div>
+            <img class="box5img"
+                src="https://content.r9cdn.net/rimg/dimg/e1/42/f5e37e20-city-61738-168bf6bab68.jpg?width=1366&height=768&xhint=1042&yhint=1172&crop=true"
+                alt="Anjuna" />
+            <p class="box5-p">Anjuna</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdPgAt28nqBGI7PqxeTAUIuUqw1l1wNOvPIMuhmEBiKajfsoafVhGepuSJHmzPoNq31wWx2cW1BJk2ewZUcB7wPNcWFSA7Ww-8UXXzOtCUTc44UKlP6Zc_YpwDy8X_BIp_6qRl_Huqomw/s1600/The+stunning+cliff+beach+of+Kerala+at+Varkala.jpg"
+                alt="Varkala" />
+            <p class="box5-p">Varkala</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://cdn1.tripoto.com/media/filter/nl/img/2380291/Image/1708494971_2021_04_27.jpg.webp"
+                alt="Utorda" />
+            <p class="box5-p">Utorda</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/0b/5a/3f/lrm-export-20180210-210205.jpg?w=900&h=500&s=1"
+                alt="Bogmola" />
+            <p class="box5-p">Bogmola</p>
+        </div>
+
+    </div>
+
+    <!-- Mountain Places -->
+    <div id="dog" class="place" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <div>
+            <img class="box5img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxXeQdIzmrjLfLNQixmeZvouLiCWpDiKWJw&s"
+                alt="Shimla" />
+            <p class="box5-p">Shimla</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://s3.india.com/wp-content/uploads/2024/06/8-Eco-friendly-Travel-Places-To-Visit-In-Coorg.jpg"
+                alt="Coorg" />
+            <p class="box5-p">Coorg</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEekNRxkSKhK2pkiGheNrTwsiR1YTQKXHFOA&s"
+                alt="Darjeeling" />
+            <p class="box5-p">Darjeeling</p>
+        </div>
+        <div>
+            <img class="box5img" src="https://theleafmunnar.com/wp-content/uploads/2024/11/tea-gardens-munnar.jpg"
+                alt="Munnar" />
+            <p class="box5-p">Munnar</p>
+        </div>
+
+    </div>
+
+    <!-- Food Places -->
+    <div id="groom" class="place" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
+        <div>
+            <img class="box5img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0FSJz1dIOmbA1sf8DRGMRZ4Y987YLALZZFA&s"
+                alt="Maharashtrian" />
+            <p class="box5-p">Maharashtrian</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-OyRJ87FrZSOkmq00yz4Wd96Tql4G6P41Gw&s"
+                alt="Kerala" />
+            <p class="box5-p">Kerala</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO08nDpaT2DD5JpPfVVIsZg_HX1FK0AMi7s_bxMUOhzXCJVOhBWofeTalLu_LyOfJqiiQ&usqp=CAU"
+                alt="Gujarati" />
+            <p class="box5-p">Gujarati</p>
+        </div>
+        <div>
+            <img class="box5img"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
+                alt="Rajasthani" />
+            <p class="box5-p">Rajasthani</p>
+        </div>
+
+    </div>
+
+    <!-- Why Book With Us (Box 6) -->
+    <div>
+        <div class="box6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+            Why <span class="rotate-infinite">Book</span> With Us
+            <i class="fa-solid fa-clipboard-question"></i>
+            <br /><br />
+        </div>
+        <div class="b6-options" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1350">
+            <div class="b6-div">
+                <i class="fa-solid fa-bookmark" style="color: rgb(242, 157, 171)"></i><br />
+                Easy Booking <br />
+                <p class="b6-p">
+                    We offer easy and convenient <br />flight bookings with attractive <br />offers.
+                </p>
+            </div>
+            <div class="b6-div">
+                <i class="fa-solid fa-hand-holding-dollar" style="color: green"></i><br />
+                Lowest Price <br />
+                <p class="b6-p">
+                    We ensure low rates on hotel <br />reservation and on flight tickets.
+                </p>
+            </div>
+            <div class="b6-div">
+                <i class="fa-solid fa-rotate" style="color: red"></i><br />
+                Instant Refund<br />
+                <p class="b6-p">
+                    Get instant refunds <br />effortlessly on your travel <br />bookings with us.
+                </p>
+            </div>
+            <div class="b6-div">
+                <i class="fa-solid fa-headset" style="color: blue"></i><br />
+                24/7 Support <br />
+                <p class="b6-p">
+                    Get assistance 24/7 on any travel <br />related query. We are happy to assist you.
+                </p>
+            </div>
+            <div class="b6-div">
+                <i class="fa-solid fa-fire" style="color: firebrick"></i><br />
+                Exciting Deals<br />
+                <p class="b6-p">
+                    Enjoy exciting deals on flights, hotels, <br />buses, car rentals, and tour packages.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+
+        <!-- Top Footer -->
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-section about">
+                <h3>About GoVista</h3>
+                <p>
+                    Founded in 2000, GoVista is a leading Indian travel platform committed to providing excellent
+                    offers, competitive airfares, and seamless booking experiences. Our goal is to simplify travel
+                    planning and offer the best deals with no hidden fees.
+                </p>
+                <p><strong>Office Address:</strong><br>
+                    123 Travel Street, Mumbai, Maharashtra, India - 400001
+                </p>
+                <p>
+                    <strong>Phone:</strong> +91-98765-43210<br>
+                    <strong>Email:</strong> support@govista.in
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="travel1.html">Home</a></li>
+                    <li><a href="Holidays.html">Holidays</a></li>
+                    <li><a href="Activities.html">Activities</a></li>
+                    <li><a href="Hotel.html">Hotels</a></li>
+                    <li><a href="Support.html">Support</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get exclusive travel deals, latest offers and updates delivered directly to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="footer-divider">
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 <strong>GOVISTA PVT. LTD.</strong> All rights reserved.<br>
+                Designed with <span style="color: #e63946;">&#10084;</span> for travel.
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        
+        // Initialize AOS
+        AOS.init({
+            once: true,
+        });
+
+        // Toggle navigation menu for hamburger on small screens
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Section toggle logic for places
+        function showSection(sectionId, element) {
+            // Hide all sections
+            document.getElementById('toys').classList.remove('active');
+            document.getElementById('cat').classList.remove('active');
+            document.getElementById('dog').classList.remove('active');
+            document.getElementById('groom').classList.remove('active');
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Remove 'selected' class from all radio-divs
+            const allDivs = document.querySelectorAll('.radio-div');
+            allDivs.forEach(div => div.classList.remove('selected'));
+
+            // Add 'selected' class to clicked div
+            element.classList.add('selected');
+        }
+
+        // Hide all sections except 'toys' on page load
+        window.onload = function () {
+            document.getElementById('toys').classList.add('active');
+        };
+    </script>
+</body>
+
+</html>

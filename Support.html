@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Caprasimo&family=Dosis:wght@200..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />  -->
+    <link rel="stylesheet" href="travel.css">
+
+
+    <title>Support</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo-text">
+            <span class="logo1"><b>Go</b></span><span class="logo2">Vista</span>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="travel1.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="Holidays.html"><i class="fa-solid fa-umbrella-beach"></i> Holidays</a></li>
+            <li><a href="Activities.html"><i class="fa-solid fa-person-hiking"></i> Activities</a></li>
+            <li><a href="Hotel.html"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+            <li><a href="Support.html"><i class="fa-solid fa-headphones"></i> Support</a></li>
+        </ul>
+    </div>
+    <br>
+    <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+  });
+</script>
+    <!-- end navbar -->
+
+   <!-- body  -->
+
+
+<div class="support-banner"> 
+  <p>Welcome to our <span>Support Center</span><br>How can we help you?</p> <br>
+  <input type="text" id="support-input" placeholder="Type your question here...">
+</div>
+
+<style>
+  .support-banner {
+    background: linear-gradient(135deg, #e50914, #ff4d6d);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .support-banner p {
+    color: white;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 20px;
+  }
+
+  .support-banner p span {
+    color: #ffd700; /* gold highlight */
+  }
+
+    .support-banner input:hover{
+        transform: scale(1.1);
+    }
+
+  .support-banner input {
+    width: 70%;
+    max-width: 500px;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 8px 5px 10px black;
+  }
+
+  .support-banner input::placeholder {
+    color: #999;
+  }
+</style>
+
+
+<style>
+  .support-banner {
+    background: linear-gradient(135deg, #e50914, #ff4d6d); /* gradient red */
+    padding: 60px 20px;
+    text-align: center;
+ 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .support-banner p {
+    color: white;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .support-banner p span {
+    color: #ffd700; /* highlight Support Center */
+  }
+</style>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(246, 245, 247);
+  }
+
+  .container {
+    display: flex;
+    max-width: 900px;
+    margin: 60px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background-color: #fff;
+  }
+
+  .login, .signup {
+    flex: 1;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Login Section */
+  .login {
+    background-color: #fff;
+  }
+
+  .login h2 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #1c1c1c;
+  }
+
+  .login input[type="email"],
+  .login input[type="password"] {
+    width: 85%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgb(238, 237, 239);
+    font-size: 16px;
+  }
+
+  .login input[type="button"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    width: auto;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 75, 43);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .login input[type="button"]:hover {
+    background-color: rgb(220, 50, 30);
+  }
+
+  .login p.forgot {
+    font-size: 13px;
+    color: rgb(86, 85, 85);
+    margin-top: 12px;
+  }
+
+  /* Signup Section */
+  .signup {
+    color: #fff;
+    background: linear-gradient(135deg, rgba(250,30,41,1) 0%, rgba(222,140,153,1) 100%);
+    border-left: 2px solid rgba(255,255,255,0.2);
+    text-align: center;
+  }
+
+  .signup h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .signup p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+
+  .signup input[type="button"] {
+    padding: 10px 25px;
+    width: auto;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background: linear-gradient(135deg, rgba(250,30,41,1) 0%, rgba(222,140,153,1) 100%);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .signup input[type="button"]:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: #fff;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 90%;
+      border-radius: 15px;
+    }
+
+    .signup {
+      border-left: none;
+      border-top: 2px solid rgba(255,255,255,0.2);
+      padding: 50px 45px;
+    }
+
+    .login input, .signup input {
+      width: 90%;
+    }
+
+    .login input[type="button"], .signup input[type="button"] {
+      padding: 8px 18px;
+      font-size: 14px;
+      min-width: 100px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .login, .signup {
+      padding: 30px 20px;
+    }
+
+    .login h2 {
+      font-size: 22px;
+    }
+
+    .signup h2 {
+      font-size: 20px;
+    }
+
+    .signup p {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .login input[type="button"], .signup input[type="button"] {
+      padding: 6px 15px;
+      font-size: 14px;
+      min-width: 90px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="login">
+    <h2>Sign In</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <p class="forgot">Forgot Your Password?</p>
+    <input type="button" value="Sign In">
+  </div>
+
+  <div class="signup">
+    <h2>Hello, Friend!</h2>
+    <p>Enter your personal details and start your journey with us!</p>
+    <input type="button" value="Sign Up">
+  </div>
+</div>
+
+</body>
+
+
+
+<div class="support-options">
+  <p class="title">You Could Also<span style="color: red;">:</span></p>
+  
+  <div class="options-container">
+    <div class="option">
+      <i class="fa-solid fa-envelope"></i>
+      <p>Email</p>
+    </div>
+  
+    <div class="option">
+      <i class="fa-solid fa-paper-plane"></i>
+      <p>Contact Us</p>
+    </div>
+  
+    <div class="option">
+      <i class="fa-solid fa-phone"></i>
+      <p>Phone Support</p>
+    </div>
+  
+    <div class="option">
+      <i class="fa-solid fa-money-bill-transfer"></i>
+      <p>Claim Refund</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .support-options {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .support-options .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+  }
+
+  .options-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    min-width: 180px;
+    justify-content: center;
+  }
+
+  .option i {
+    font-size: 20px;
+    color: #e50914;
+    transition: color 0.3s ease;
+  }
+
+  .option p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    transition: color 0.3s ease;
+  }
+
+  .option:hover {
+    background: #ffe6ea;
+    border-color: #e50914;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .option:hover i,
+  .option:hover p {
+    color: #e50914;
+  }
+</style>
+
+<style>
+/* Container for table with horizontal padding */
+.table-container {
+    padding: 0 15px; /* 15px left & right gap on mobile */
+    overflow-x: auto; /* allow horizontal scroll if needed */
+}
+
+/* Original table styles */
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.responsive-table th, .responsive-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+}
+
+.responsive-table th {
+    background: #555;
+    color: white;
+}
+
+.responsive-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.responsive-table a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.responsive-table a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .responsive-table thead {
+        display: none;
+    }
+
+    .responsive-table, 
+    .responsive-table tbody, 
+    .responsive-table tr, 
+    .responsive-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .responsive-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .responsive-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+</style>
+
+<div class="table-container">
+    <table class="responsive-table">
+        <thead>
+            <tr>
+                <th>Travel Product</th>
+                <th>Service Support</th>
+                <th>Sales Support</th>
+                <th>Service Support Timings</th>
+                <th>Sales Support Timings</th>
+                <th>Phone</th>
+                <th>Live Chat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Travel Product">Domestic Flights</td>
+                <td data-label="Service Support"><a href="#">Manage Booking</a><br>Email: <span style="color: #0077ff;">support@govista.com</span></td>
+                <td data-label="Sales Support"><a href="#">Book Online</a></td>
+                <td data-label="Service Support Timings">09:00 - 23:59</td>
+                <td data-label="Sales Support Timings">08:00 - 22:00</td>
+                <td data-label="Phone">+91 98765 43210</td>
+                <td data-label="Live Chat"><a href="#">Start Chat</a></td>
+            </tr>
+            <tr>
+                <td data-label="Travel Product">International Flights</td>
+                <td data-label="Service Support"><a href="#">Track Booking</a><br>Email: <span style="color: #0077ff;">intl@govista.com</span></td>
+                <td data-label="Sales Support"><a href="#">Book Online</a></td>
+                <td data-label="Service Support Timings">24x7</td>
+                <td data-label="Sales Support Timings">09:00 - 23:59</td>
+                <td data-label="Phone">+91 91234 56789</td>
+                <td data-label="Live Chat"><a href="#">Start Chat</a></td>
+            </tr>
+            <tr>
+                <td data-label="Travel Product">Hotels</td>
+                <td data-label="Service Support"><a href="#">Manage Reservation</a><br>Email: <span style="color: #0077ff;">hotel@govista.com</span></td>
+                <td data-label="Sales Support"><a href="#">Book Online</a></td>
+                <td data-label="Service Support Timings">08:00 - 22:00</td>
+                <td data-label="Sales Support Timings">08:00 - 22:00</td>
+                <td data-label="Phone">+91 99887 66554</td>
+                <td data-label="Live Chat"><a href="#">Start Chat</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- end body  -->
+
+   
+
+   <footer class="footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+
+  <!-- Top Footer -->
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section about">
+      <h3>About GoVista</h3>
+      <p>
+        Founded in 2000, GoVista is a leading Indian travel platform committed to providing excellent
+        offers, competitive airfares, and seamless booking experiences. Our goal is to simplify travel
+        planning and offer the best deals with no hidden fees.
+      </p>
+      <p><strong>Office Address:</strong><br>
+        123 Travel Street, Mumbai, Maharashtra, India - 400001
+      </p>
+      <p>
+        <strong>Phone:</strong> +91-98765-43210<br>
+        <strong>Email:</strong> support@govista.in
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="travel1.html">Home</a></li>
+        <li><a href="Holidays.html">Holidays</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="Hotel.html">Hotels</a></li>
+        <li><a href="Support.html">Support</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-section newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Get exclusive travel deals, latest offers and updates delivered directly to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr class="footer-divider">
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; 2025 <strong>GOVISTA PVT. LTD.</strong> All rights reserved.<br>
+      Designed with <span style="color: #e63946;">&#10084;</span> for travel.
+    </div>
+  </div>
+</footer></body>
+
+</html>

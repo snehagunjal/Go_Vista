@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Caprasimo&family=Dosis:wght@200..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />  -->
+    <link rel="stylesheet" href="travel.css">
+
+
+    <title>Hotels</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo-text">
+            <span class="logo1"><b>Go</b></span><span class="logo2">Vista</span>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="travel1.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="Holidays.html"><i class="fa-solid fa-umbrella-beach"></i> Holidays</a></li>
+            <li><a href="Activities.html"><i class="fa-solid fa-person-hiking"></i> Activities</a></li>
+            <li><a href="Hotel.html"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+            <li><a href="Support.html"><i class="fa-solid fa-headphones"></i> Support</a></li>
+        </ul>
+    </div>
+    <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+  });
+</script>
+    <br>
+
+
+    <!-- hotel img  -->
+
+    <div style="position: relative; max-width: 100%; overflow: hidden;">
+
+        <!-- Banner -->
+        <div style="position: relative; width: 100%; max-height: 800px; overflow: hidden;">
+            <img src="https://digital.ihg.com/is/image/ihg/SALL-21x9-2500x1702" alt="Hotel Banner"
+                style="width: 100%; height: auto; display: block;">
+
+            <!-- Overlay Content -->
+            <div style="position: absolute; 
+                top: 50%; 
+                left: 5%; 
+                transform: translateY(-50%); 
+                color: white; 
+                text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+                font-family: 'Poppins', sans-serif; 
+                max-width: 90%; 
+                width: 600px; 
+                text-align: left;
+                padding: 10px;">
+
+                <h2 style="font-size: clamp(20px, 5vw, 48px); font-weight: 800; margin: 0;">
+                    Stay a Little Longer
+                </h2>
+
+                <p style="font-size: clamp(14px, 2vw, 20px); margin: 12px 0;">
+                    Get extra suite nights, on us.
+                </p>
+
+                <a href="#" style="display: inline-block; 
+                        margin-top: 18px; 
+                        padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 28px); 
+                        font-size: clamp(12px, 1.5vw, 18px); 
+                        font-weight: 600; 
+                        text-decoration: none; 
+                        background: linear-gradient(90deg, #e50914, #b20710); 
+                        color: #fff; 
+                        border-radius: 8px; 
+                        box-shadow: 0px 4px 10px rgba(0,0,0,0.4); 
+                        transition: 0.3s;">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- hotel img end  -->
+
+    <br><br>
+
+    <!-- Welcome Text -->
+    <p
+        style="text-align: center; font-family: 'Poppins', sans-serif; font-size: clamp(18px, 2vw, 28px); font-weight: 500; ">
+        WELCOME TO <span class="logo-text" style="display: inline;">
+            <span class="logo1" style="color:#e50914; font-weight:700;">Go</span>
+            <span class="logo2" style="color:#111;">Vista</span>
+        </span> HOTELS & RESORTS
+    </p>
+
+
+    <div style="text-align: center; 
+            max-width: 800px; 
+            margin: 50px auto; 
+            padding: 30px; 
+            font-family: 'Poppins', sans-serif; 
+            ">
+
+        <h2 style="font-size: 2.5em; font-weight: 800; color: #111; margin-bottom: 15px;">
+            19 Hotel Brands. <br> 6,000+ Global Destinations.
+        </h2>
+
+        <p style="font-size: 1.2em; color: #444; margin-bottom: 25px; line-height: 1.6;">
+            Travel like you mean it with
+            <span style="color: #e50914; font-weight: 700;">GoVista One Rewards</span>,
+            our award-winning loyalty program that makes it easier for you to see the world
+            <br> and get rewarded while doing it.
+        </p>
+        <a href="#" style="display: inline-block; 
+                     padding: 12px 30px; 
+                     font-size: 1.1em; 
+                     font-weight: 600; 
+                     text-decoration: none; 
+                     border-radius: 8px; 
+                     background: linear-gradient(90deg, #e50914, #b0060f); 
+                     color: #fff; 
+                     transition: 0.3s;">
+            EXPLORE NOW
+        </a>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+        <div class="slideshow-container" id="slideshow1"
+            style="position: relative; width: 80%; max-width: 1200px; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.3);">
+
+            <!-- Slides -->
+            <div class="slide fade">
+                <img src="https://digital.ihg.com/is/image/ihg/ihg-refresh-lp-offer-carousel-3-svp-1320x660"
+                    style="width:100%; border-radius: 15px;">
+            </div>
+
+            <div class="slide fade">
+                <img src="https://digital.ihg.com/is/image/ihg/ihg-refresh-lp-offer-carousel-4-svp-1320x660"
+                    style="width:100%; border-radius: 15px;">
+            </div>
+
+            <div class="slide fade">
+                <img src="https://digital.ihg.com/is/image/ihg/Kimpton_KILogoRefresh_0425_1320x660"
+                    style="width:100%; border-radius: 15px;">
+            </div>
+
+            <div class="slide fade">
+                <img src="https://digital.ihg.com/is/image/ihg/ihg-refresh-lp-offer-carousel-vo-svp-1320x660?$Original$"
+                    style="width:100%; border-radius: 15px;">
+            </div>
+
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <!-- Dots -->
+            <div style="text-align:center; position: absolute; bottom: 15px; width: 100%;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <style>
+        .slide {
+            display: none;
+        }
+
+        .fade {
+            animation: fadeEffect 1.5s;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 15px;
+            margin-top: -30px;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            border-radius: 50%;
+            user-select: none;
+            background: rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 4px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #e50914;
+        }
+    </style>
+
+    <!-- JS -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) { showSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n); }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Auto Slide
+        setInterval(() => { plusSlides(1); }, 4000);
+    </script>
+    <br>
+
+    <style>
+        .service-img {
+            transition: 0.4s ease;
+            background: #fff;
+            color: #111;
+        }
+
+        .service-img i {
+            font-size: 50px;
+            color: #e50914;
+            margin-bottom: 15px;
+            transition: 0.4s ease;
+        }
+
+        .service-img h3 {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: 0.4s ease;
+        }
+
+        .service-img p {
+            color: gray;
+            font-size: 15px;
+            line-height: 1.6;
+            transition: 0.4s ease;
+        }
+
+        /* Hover effect */
+        .service-img:hover {
+            transform: scale(1.05);
+            background-color: red;
+            color: white;
+        }
+
+        .service-img:hover i,
+        .service-img:hover h3,
+        .service-img:hover p {
+            color: white !important;
+        }
+    </style>
+    <!-- our services  -->
+
+    <h2
+        style="font-size: 2.5em; font-weight: 800; color: #111; margin-bottom: 25px; text-align: center; font-family:'Poppins',sans-serif;">
+        <span style="color: red;">O</span>ur <span style="color: red;">S</span>ervices
+    </h2>
+    <div
+        style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px; font-family: 'Poppins', sans-serif;">
+
+        <!-- Card 1 -->
+        <div class="service-img"
+            style="text-align: center; max-width: 300px; padding: 25px; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); transition: 0.3s;  cursor: pointer;">
+            <i class="fa-solid fa-people-roof" style="font-size: 50px; color: #e50914; margin-bottom: 15px;"></i>
+            <h3 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">Family Travel</h3>
+            <p style="color: gray; font-size: 15px; line-height: 1.6;">Create lasting family memories with travel
+                packages offering fun, comfort, and adventure for all ages.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-img"
+            style="text-align: center; max-width: 300px; padding: 25px; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); transition: 0.3s;  cursor: pointer;">
+            <i class="fa-solid fa-umbrella-beach" style="font-size: 50px; color: #e50914; margin-bottom: 15px;"></i>
+            <h3 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">Beach Holidays</h3>
+            <p style="color: gray; font-size: 15px; line-height: 1.6;">Relax and unwind with beautiful sunsets, sandy
+                beaches, and perfect getaways at coastal resorts.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-img"
+            style="text-align: center; max-width: 300px; padding: 25px; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); transition: 0.3s;  cursor: pointer;">
+            <i class="fa-solid fa-mountain-sun" style="font-size: 50px; color: #e50914; margin-bottom: 15px;"></i>
+            <h3 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">Adventure Trips</h3>
+            <p style="color: gray; font-size: 15px; line-height: 1.6;">Experience thrilling adventures in the mountains,
+                jungles, and exotic destinations around the world.</p>
+        </div>
+
+    </div>
+
+    <div
+        style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px; font-family: 'Poppins', sans-serif;">
+
+        <!-- Card 1 -->
+        <div class="service-img"
+            style="text-align: center; max-width: 300px; padding: 25px; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); transition: 0.3s;  cursor: pointer;">
+            <i class="fa-solid fa-heart" style="font-size: 50px; color: #e50914; margin-bottom: 15px;"></i>
+            <h3 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">Honeymoon Escapes</h3>
+            <p style="color: gray; font-size: 15px; line-height: 1.6;">
+                Celebrate love with romantic getaways, candlelight dinners, and luxury resorts designed for couples.
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-img"
+            style="text-align: center; max-width: 300px; padding: 25px; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); transition: 0.3s;  cursor: pointer;">
+            <i class="fa-solid fa-hotel" style="font-size: 50px; color: #e50914; margin-bottom: 15px;"></i>
+            <h3 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">Luxury Stays</h3>
+            <p style="color: gray; font-size: 15px; line-height: 1.6;">
+                Experience five-star hospitality with premium suites, private villas, and exclusive concierge services.
+            </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-img"
+            style="text-align: center; max-width: 300px; padding: 25px; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); transition: 0.3s;  cursor: pointer;">
+            <i class="fa-solid fa-briefcase" style="font-size: 50px; color: #e50914; margin-bottom: 15px;"></i>
+            <h3 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">Corporate Retreats</h3>
+            <p style="color: gray; font-size: 15px; line-height: 1.6;">
+                Blend work and leisure with tailored retreats, team-building experiences, and professional event
+                hosting.
+            </p>
+        </div>
+
+    </div>
+    <br>
+
+
+
+
+
+<footer class="footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+
+  <!-- Top Footer -->
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section about">
+      <h3>About GoVista</h3>
+      <p>
+        Founded in 2000, GoVista is a leading Indian travel platform committed to providing excellent
+        offers, competitive airfares, and seamless booking experiences. Our goal is to simplify travel
+        planning and offer the best deals with no hidden fees.
+      </p>
+      <p><strong>Office Address:</strong><br>
+        123 Travel Street, Mumbai, Maharashtra, India - 400001
+      </p>
+      <p>
+        <strong>Phone:</strong> +91-98765-43210<br>
+        <strong>Email:</strong> support@govista.in
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="travel1.html">Home</a></li>
+        <li><a href="Holidays.html">Holidays</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="Hotel.html">Hotels</a></li>
+        <li><a href="Support.html">Support</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-section newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Get exclusive travel deals, latest offers and updates delivered directly to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr class="footer-divider">
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; 2025 <strong>GOVISTA PVT. LTD.</strong> All rights reserved.<br>
+      Designed with <span style="color: #e63946;">&#10084;</span> for travel.
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
